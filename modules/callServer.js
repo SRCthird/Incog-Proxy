@@ -48,7 +48,7 @@ const callServer = () => {
         } 
     });
 
-    server.listen(port, () => {
+    server.listen(port, '127.0.0.1', () => {
         console.log(`Server is running at http://127.0.0.1:${port}/`);
     });
 };
