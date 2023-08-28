@@ -60,7 +60,7 @@ This will open `https://example.com` in a private Microsoft Edge window.
 ### Stop the server:
 
 ```bash
-node stop
+npm stop
 ```
 or:
 ```bash
