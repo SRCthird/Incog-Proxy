@@ -44,11 +44,14 @@ You can adjust server settings by editing the `config.json` file:
 ## Usage
 
 ### Start the server:
-
+**NPM:**
 ```bash
 npm start
 ```
-
+**.exe**
+```powershell
+.\index.exe --start
+```
 ### Send a `GET` request to the server with the desired URL:
 
 ```bash
@@ -62,10 +65,15 @@ This will open `https://example.com` in a private Microsoft Edge window.
 ```bash
 npm stop
 ```
-or:
+or
 ```bash
 curl "http://127.0.0.1:42830/admin/shutdown"
 ```
+or
+```powershell
+.\index.exe --stop
+```
+
 
 ### Set on-start config
 
