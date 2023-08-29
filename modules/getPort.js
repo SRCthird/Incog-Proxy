@@ -1,4 +1,4 @@
-import fs from 'fs';
+const fs = require('fs');
 
 const getPort = () => {
     let config = {};
@@ -11,4 +11,4 @@ const getPort = () => {
     return config.port || 42830;
 }
 
-export default getPort;
+module.exports = getPort;

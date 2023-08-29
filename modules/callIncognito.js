@@ -1,4 +1,4 @@
-import { exec } from 'child_process';
+const { exec } = require('child_process');
 
 const callIncognito = (url) => {
     const command = `start msedge -inprivate "${url}"`
@@ -13,4 +13,4 @@ const callIncognito = (url) => {
     });
 }
 
-export default callIncognito;
+module.exports = callIncognito;

@@ -1,5 +1,5 @@
-import http from "http";
-import getPort from "./getPort.js";
+const http = require("http");
+const getPort = require("./getPort.js");
 
 const  stopApp = () => {
     const port = getPort();
@@ -15,4 +15,4 @@ const  stopApp = () => {
     });
 }
 
-export default stopApp;
+module.exports = stopApp;

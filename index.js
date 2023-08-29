@@ -1,8 +1,8 @@
-import yargs from 'yargs/yargs';
-import { hideBin } from 'yargs/helpers';
-import fs from 'fs';
-import startApp from './modules/startApp.js';
-import stopApp from './modules/stopApp.js';
+const yargs = require('yargs/yargs');
+const { hideBin } = require('yargs/helpers');
+const fs = require('fs');
+const startApp = require('./modules/startApp.js');
+const stopApp = require('./modules/stopApp.js');
 
 const argv = yargs(hideBin(process.argv)).argv;
 

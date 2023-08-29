@@ -1,5 +1,5 @@
-import http from 'http';
-import getPort from './getPort.js';
+const http = require('http');
+const getPort = require('./getPort.js');
 
 const checkServerStatus = (callback) => {
     const port = getPort();
@@ -23,4 +23,4 @@ const checkServerStatus = (callback) => {
     });
 }
 
-export default checkServerStatus;
+module.exports = checkServerStatus;

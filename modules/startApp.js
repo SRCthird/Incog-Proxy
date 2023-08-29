@@ -1,5 +1,5 @@
-import checkServerStatus from "./checkServerStatus.js";
-import callServer from "./callServer.js";
+const checkServerStatus = require("./checkServerStatus.js");
+const callServer = require("./callServer.js");
 
 const startApp = () => {
     checkServerStatus((status) => {
@@ -16,4 +16,4 @@ const startApp = () => {
     });
 }
 
-export default startApp;
+module.exports = startApp;

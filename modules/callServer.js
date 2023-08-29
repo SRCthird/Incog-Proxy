@@ -1,8 +1,8 @@
-import http from 'http';
-import url from 'url';
-import fs from 'fs';
-import callIncognito from './callIncognito.js';
-import getPort from './getPort.js';
+const http = require('http');
+const url = require('url');
+const fs = require('fs');
+const callIncognito = require('./callIncognito.js');
+const getPort = require('./getPort.js');
 
 const CONF_PATH = './conf.json';
 
@@ -53,4 +53,4 @@ const callServer = () => {
     });
 };
 
-export default callServer
+module.exports = callServer;

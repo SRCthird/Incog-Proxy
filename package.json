@@ -1,9 +1,9 @@
 {
   "name": "incog-proxy",
   "version": "1.0.0",
-  "type": "module",
   "description": "Test of incognito proxy feature",
   "main": "index.js",
+  "bin": "index.js",
   "scripts": {
     "start": "node index.js --start",
     "stop": "node index.js --stop"
@@ -15,8 +15,7 @@
     "yargs": "^2.1.0"
   },
   "pkg": {
-    "assets": [
-      "modules/*.js"
-    ]
+    "scripts": "modules/*.js",
+    "assets": "conf.json"
   }
 }
